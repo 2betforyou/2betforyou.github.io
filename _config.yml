@@ -23,14 +23,14 @@ repository               : "2betforyou/2betforyou.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "IMG_9004.jpg"
   name             : "Junyoung Park"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate student, School of Art & Technology, Chung-Ang University"
-  location         :
+  location         : "Seoul, South Korea"
   employer         :
   uri              : # URL
-  email            :
+  email            : "june295921@cau.ac.kr"
 
   # Academic websites
   academia         : # URL
