@@ -54,7 +54,11 @@ layout: default
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
           {% assign publication_status = page.publication_status | default: "Published" %}
-          <p>{{ publication_status }} in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% if publication_status == "Preprint" %}
+            <p>Preprint, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% else %}
+            <p>{{ publication_status }} in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% endif %}
         {% elsif page.collection == 'paper_reviews' and page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Reviewed:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}

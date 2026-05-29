@@ -1,16 +1,16 @@
 ---
 title: "Persona Attack: Incremental Memory Injection Jailbreak Attack against Large Language Models"
 collection: publications
-category: conferences
+category: preprints
 permalink: /publication/2025-05-01-persona-attack-incremental-memory-injection-jailbreak
-excerpt: "Persona Attack: Incremental Memory Injection Jailbreak Attack against Large Language Models. NeurIPS 2025 Submitted."
+excerpt: "Persona Attack: Incremental Memory Injection Jailbreak Attack against Large Language Models. Preprint."
 date: 2025-05-01
-venue: "NeurIPS 2025 Submitted"
-publication_status: "Submitted"
-citation: "Junyoung Park, Yeseul Jang, Sungyong Joo, Byunghoon Oh, Yunseo Han, Sunghwan Park, Jaewoo Lee. (2025). \"Persona Attack: Incremental Memory Injection Jailbreak Attack against Large Language Models.\" <i>NeurIPS 2025 Submitted</i>."
+venue: "Preprint"
+publication_status: "Preprint"
+citation: "Junyoung Park, Yeseul Jang, Sungyong Joo, Byunghoon Oh, Yunseo Han, Sunghwan Park, Jaewoo Lee. (2025). \"Persona Attack: Incremental Memory Injection Jailbreak Attack against Large Language Models.\" <i>Preprint</i>."
 ---
 
 ## Publication Details
 - Role: First author
-- Status: NeurIPS 2025 Submitted
+- Status: Preprint
 - Co-authors: Yeseul Jang, Sungyong Joo, Byunghoon Oh, Yunseo Han, Sunghwan Park, Jaewoo Lee

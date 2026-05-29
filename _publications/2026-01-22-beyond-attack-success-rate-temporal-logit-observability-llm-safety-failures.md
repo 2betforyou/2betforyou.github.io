@@ -1,17 +1,17 @@
 ---
 title: "Beyond Attack Success Rate: Temporal Logit Observability for LLM Safety Failures"
 collection: publications
-category: conferences
+category: preprints
 permalink: /publication/2026-01-22-beyond-attack-success-rate-temporal-logit-observability-llm-safety-failures
-excerpt: "Beyond Attack Success Rate: Temporal Logit Observability for LLM Safety Failures. Submitted, NeurIPS 2026."
+excerpt: "Beyond Attack Success Rate: Temporal Logit Observability for LLM Safety Failures. Preprint."
 date: 2026-01-22
-venue: "NeurIPS 2026"
-publication_status: "Submitted"
-citation: "Junyoung Park. (2026). \"Beyond Attack Success Rate: Temporal Logit Observability for LLM Safety Failures.\" <i>NeurIPS 2026 Submitted</i>."
+venue: "Preprint"
+publication_status: "Preprint"
+link: "https://arxiv.org/abs/2605.29629"
+citation: "Junyoung Park. (2026). \"Beyond Attack Success Rate: Temporal Logit Observability for LLM Safety Failures.\" <i>Preprint</i>."
 ---
 
 ## Publication Details
 - Role: First author
-- Status: Submitted
+- Status: Preprint
 - Co-authors: Sunghwan Park, Sungyong Joo, Jaewoo Lee
-- Submitted: May 2026
