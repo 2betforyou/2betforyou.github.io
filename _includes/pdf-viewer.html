@@ -1,0 +1,8 @@
+{% assign pdf_src = include.src | relative_url %}
+<div class="pdf-viewer" aria-label="{{ include.title | default: 'PDF preview' }}">
+  <iframe
+    src="{{ pdf_src }}#toolbar=0&navpanes=0&scrollbar=1&view=FitH"
+    title="{{ include.title | default: 'PDF preview' }}"
+    loading="lazy">
+  </iframe>
+</div>
