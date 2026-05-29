@@ -28,4 +28,4 @@ My current work studies how safety failures emerge during generation, rather tha
 
 ## Technical Background
 
-My technical background includes Python, PyTorch, HuggingFace, RAG-style systems, jailbreak evaluation, LLM-as-Judge evaluation, LlamaGuard, HarmBench, GPT-4o-mini, and human labeling.
+My technical background includes Python, PyTorch, HuggingFace, RAG systems, jailbreak evaluation, LLM-as-Judge evaluation, LlamaGuard, HarmBench, GPT-4o-mini, and human labeling.
