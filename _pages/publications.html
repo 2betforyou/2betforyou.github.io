@@ -14,11 +14,12 @@ author_profile: true
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
+    {% assign category_key = category[0] %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
+      {% unless post.category contains category_key %}
         {% continue %}
-      {% endif %}
+      {% endunless %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
@@ -32,5 +33,10 @@ author_profile: true
   {% endfor %}
 {% endif %}
 
+<h2>Software Registration & Copyright</h2><hr />
 
-
+<ul class="publication__items publication__items--standalone">
+  <li>GraphRAG | Korea Copyright Commission (Reg No. C-2025-062232)</li>
+  <li>GraphRAG | National IT Industry Promotion Agency (NIPA) (Reg No. ASSET_0014943)</li>
+  <li>Distributed Unlearnable Example | Korea Copyright Commission (Reg No. C-2025-051859)</li>
+</ul>
