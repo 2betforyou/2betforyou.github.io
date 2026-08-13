@@ -2,11 +2,11 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        <button class="greedy-nav__toggle" type="button" aria-label="Show navigation menu" aria-controls="site-nav-menu" aria-expanded="false"><span class="navicon"></span></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
+            <a class="site-brand" href="{{ base_path }}/"><span class="site-brand__initials" aria-hidden="true">JP</span><span class="site-brand__name">{{ site.title }}</span></a>
           </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
@@ -18,12 +18,12 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul id="site-nav-menu" class="hidden-links hidden"></ul>
       </nav>
+      <button id="theme-toggle" class="site-theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+        <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
 </div>

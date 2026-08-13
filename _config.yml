@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Junyoung Park"
 title_separator          : "-"
 name                     : &name "Junyoung Park"
-description              : &description "Junyoung Park's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Junyoung Park researches LLM safety, evaluation, and process-level observability of model failures."
 url                      : https://2betforyou.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -143,14 +143,16 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "og.png"
+og_description           : "Research on LLM safety, evaluation, and how model failures form during generation."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Junyoung Park"
+  links:
+    - "https://github.com/2betforyou"
+    - "https://scholar.google.com/citations?user=AjNUcTAAAAAJ&hl=ko"
 
 
 # Analytics

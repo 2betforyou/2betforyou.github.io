@@ -11,9 +11,10 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="{% if page.url == '/' %}home-body{% elsif page.url == '/portfolio/' %}portfolio-body{% endif %}">
 
     {% include browser-upgrade.html %}
+    <a class="site-skip-link" href="#main">Skip to content</a>
     {% include masthead.html %}
 
     {{ content }}

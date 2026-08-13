@@ -1,10 +1,76 @@
 ---
-layout: pdf-page
+layout: default
 title: "Portfolio"
+description: "Selected research by Junyoung Park across LLM safety, adversarial evaluation, and graph-grounded retrieval."
 permalink: /portfolio/
 author_profile: false
 ---
 
 {% include base_path %}
+{% assign portfolio_work = site.publications | sort: "date" | reverse %}
 
-{% include pdf-viewer.html src="/CV_Portfolio/Portfolio_JunyoungPark.pdf" title="Junyoung Park Portfolio" %}
+<main id="main" class="portfolio-main" role="main">
+  <section class="portfolio-hero" aria-labelledby="portfolio-title">
+    <div class="site-shell portfolio-hero__inner">
+      <p class="section-kicker"><span>Research portfolio</span><span>2025—Now</span></p>
+      <div class="portfolio-hero__copy">
+        <h1 id="portfolio-title">Work that makes<br><em>model failure</em><br>observable.</h1>
+        <div>
+          <p>Selected research spanning generation-time safety signals, multi-turn jailbreaks, and reliable retrieval for high-stakes domains.</p>
+          <a class="text-link text-link--strong" href="#case-studies">View case studies <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <dl class="portfolio-hero__facts">
+        <div><dt>Projects</dt><dd>{{ portfolio_work | size | prepend: "0" }}</dd></div>
+        <div><dt>Core field</dt><dd>Trustworthy &amp; Safe AI</dd></div>
+        <div><dt>Methods</dt><dd>Evaluation · Retrieval · Analysis</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="case-studies" class="portfolio-cases" aria-labelledby="case-studies-title">
+    <div class="site-shell">
+      <header class="section-heading">
+        <p class="section-heading__index">01</p>
+        <div>
+          <p class="section-heading__eyebrow">Selected research</p>
+          <h2 id="case-studies-title">Case studies</h2>
+        </div>
+      </header>
+
+      <div class="case-list">
+        {% for project in portfolio_work %}
+          <article class="case-study">
+            <div class="case-study__index"><span>0{{ forloop.index }}</span><span>{{ project.date | date: "%Y" }}</span></div>
+            <div class="case-study__main">
+              <p class="case-study__focus">{{ project.focus }}</p>
+              <h3><a href="{{ base_path }}{{ project.url }}">{{ project.title }}</a></h3>
+              <p>{{ project.portfolio_summary | default: project.excerpt }}</p>
+            </div>
+            <dl class="case-study__meta">
+              <div><dt>Role</dt><dd>{{ project.portfolio_role | default: "Researcher" }}</dd></div>
+              <div><dt>Status</dt><dd>{{ project.publication_status | default: "Published" }}</dd></div>
+              <div class="case-study__links"><dt>Links</dt><dd>
+                <a href="{{ base_path }}{{ project.url }}">Overview</a>
+                {% for item in project.publication_links %}{% if item.url %}<a href="{{ item.url }}">{{ item.label }}</a>{% endif %}{% endfor %}
+              </dd></div>
+            </dl>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-dossier" aria-labelledby="dossier-title">
+    <div class="site-shell">
+      <header class="portfolio-dossier__header">
+        <div>
+          <p class="section-heading__eyebrow">Complete dossier</p>
+          <h2 id="dossier-title">AI-Security Research Portfolio</h2>
+        </div>
+        <a class="button-link" href="{{ '/CV_Portfolio/Portfolio_JunyoungPark.pdf' | relative_url }}" download>Download PDF <span aria-hidden="true">↓</span></a>
+      </header>
+      {% include pdf-viewer.html src="/CV_Portfolio/Portfolio_JunyoungPark.pdf" title="Junyoung Park AI-Security Research Portfolio" %}
+    </div>
+  </section>
+</main>

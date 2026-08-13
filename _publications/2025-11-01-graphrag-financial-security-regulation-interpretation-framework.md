@@ -6,8 +6,12 @@ permalink: /publication/2025-11-01-graphrag-financial-security-regulation-interp
 excerpt: "A GraphRAG-Based Framework for Interpreting Financial Security Regulations. Oral Accepted, Korea Society for Electronic Commerce Fall Conference."
 date: 2025-11-01
 venue: "Korea Society for Electronic Commerce Fall Conference"
+publication_status: "Accepted · Oral"
 link: "http://calsec.or.kr/databank/proceeding/2025fc_paper.pdf#page=112"
 authors: "Sungyong Joo, Junyoung Park, Byunghoon Oh, Jaewoo Lee"
+focus: "Applied AI · Retrieval"
+portfolio_role: "Co-author"
+portfolio_summary: "A graph-grounded retrieval and reasoning framework for interpreting financial security regulations with more reliable domain evidence."
 publication_links:
   - label: "Proceedings"
     url: "http://calsec.or.kr/databank/proceeding/2025fc_paper.pdf#page=112"
